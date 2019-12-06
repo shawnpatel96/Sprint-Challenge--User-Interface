@@ -201,6 +201,8 @@ footer nav a {
     
 }
 
+/*boxes code start here   */
+
 .imagetwo{
     margin-bottom: 20px;
 }
@@ -246,3 +248,74 @@ footer nav a {
 }
     
 
+/*   STRETCH CODE */
+
+@keyframes slide{
+    from{transition: translateX(-200px)}
+    to{ transform: translateX(1000px)}
+}
+
+.productpage{
+    
+    background:black;
+    color:white;
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+    
+}
+
+.aboutpage{
+    
+    text-align: center;
+}
+.container-product{
+   
+    margin-top:10px;
+    
+    background: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.container-product div{ 
+    animation-name: slide;
+    animation-duration: 1s;
+    width:45%;
+    padding:20px;
+    justify-content: space-around;
+    
+}
+.imagetwoo{
+    transition: .5s;
+    width: 100%;
+}
+.container-product div:hover{
+    background: red;
+    transform: rotate(360deg);
+}
+
+.prodcutfooter {
+    margin-top: 20px;
+    width: 100%;
+    background: black;
+    filter: invert(100%);
+    border: 3px solid white;
+}
+
+footer .productfooter {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+   
+}
+@media(max-width:600px){
+    p{
+        font-size:2rem;
+    }
+
+}
